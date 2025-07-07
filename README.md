@@ -4,4 +4,6 @@
 - **Sem exceção.**
 - Cada pasta contem uma atividade de unidade!
 - Fazer as unidades aqui.
-- <a href="U2_2T/index2.html" target="_blank">Ir para a página 2 (nova aba)</a>
+- <a href="U2_2T/index2.html" target="_blank">Ir para a unidade 2</a>
+- <a href="U3_2T/index.html" target="_blank">Ir para a unidade 3</a>
+- <a href="U4_2T/index4.html" target="_blank">Ir para a unidade 4</a>
