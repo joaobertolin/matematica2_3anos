@@ -31,7 +31,6 @@ export const perguntas = [
             },
         ]
     },
-    // ... (restante das perguntas conforme fornecido no código original)
 ];
 
 // script.js
