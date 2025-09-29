@@ -1,51 +1,47 @@
-print("I Competição de Programação da Start")
-ano = "II"
+print("Primeira Competição de Programação da Start")
+etapa = "Segunda"
+print(etapa, "Competição de Programação da Start")
+print(f"{etapa} Competição de Programação da Start")
 
-print(ano, "Competição de Programação da Start")
-print(f"{ano} Competição de Programação da Start")
+ficcao = 12
+nao_ficcao = 7
+infantil = 5
 
-livro_ficcao = 10
-livro_nficcao = 8
-livro_infantil = 6
+total_pontos = ficcao + nao_ficcao + infantil
+print(f"Rodrigo acumulou {total_pontos} pontos.")
 
-pontos_rodrigo = livro_ficcao + livro_nficcao + livro_infantil
-print(f"Os pontos totais do Rodrigo são: {pontos_rodrigo}")
+fig_total = int(input("Informe o total de figurinhas: "))
+amigos = int(input("Informe a quantidade de amigos: "))
+fig_por_amigo = fig_total // (amigos + 3)
+fig_joao = 2 * fig_por_amigo
+print(f"João ficou com {fig_joao} figurinhas.")
 
-total_figurinhas = int(input("Digite o total de figurinhas: "))
-numero_amigos = int(input("Digite o número de amigos: "))
-figurinhas_amigos = total_figurinhas // (numero_amigos + 2)
-figurinhas_joao = 2 * figurinhas_amigos
-print(f"João recebeu {figurinhas_joao} figurinhas.")
-
-numero_alunos = int(input("Digite a quantidade de alunos: "))
-numero_monitores = int(input("Digite a quantidade de monitores: "))
-resposta_positiva = "Pode ir"
-resposta_negativa = "Não pode ir"
-if numero_alunos + numero_monitores <= 50:
-    print(resposta_positiva)
+alunos = int(input("Informe número de alunos: "))
+monitores = int(input("Informe número de monitores: "))
+permitido = "Entrada Liberada"
+negado = "Entrada Negada"
+if alunos + monitores <= 50:
+    print(permitido)
 else:
-    print(resposta_negativa)
+    print(negado)
 
-p = int(input("Digite a posição da porta (0 ou 1):"))
-r = int(input("Digite a posição da porta (0 ou 1):"))
-if p == 0 and r == 0:
+porta1 = int(input("Informe posição da porta (0 ou 1): "))
+porta2 = int(input("Informe posição da outra porta (0 ou 1): "))
+if porta1 == 0 or porta2 == 0:
     print("C")
-elif p == 0 and r == 1:
-    print("C")
-elif p == 1 and r == 1:
+elif porta1 == 1 and porta2 == 1:
     print("A")
 else:
     print("B")
 
-def calcula_idade_maior(idade_monica, idade_filho1, idade_filho2):
-    idade_filho3 = idade_monica - idade_filho1 - idade_filho2
-    idade_maxima = max(idade_filho1, idade_filho2, idade_filho3)
-    return idade_filho3, idade_maxima
-calcula_idade_maior(68, 12, 30)
+def calcular_filho_mais_velho(idade_mae, idade_filho_a, idade_filho_b):
+    idade_filho_c = idade_mae - idade_filho_a - idade_filho_b
+    maior_idade = max(idade_filho_a, idade_filho_b, idade_filho_c)
+    return idade_filho_c, maior_idade
+calcular_filho_mais_velho(68, 12, 30)
 
-def livro_mais_longo(p1, p2, p3, p4, p5):
-    return max(p1, p2, p3, p4, p5)
+def livro_com_mais_paginas(pag1, pag2, pag3, pag4, pag5):
+    return max(pag1, pag2, pag3, pag4, pag5)
 
-# Exemplo de uso
-maior_livro = livro_mais_longo(100, 250, 150, 320, 400)
-print(f"O livro com mais páginas tem {maior_livro} páginas.")
+max_paginas = livro_com_mais_paginas(100, 250, 150, 320, 400)
+print(f"O maior número de páginas entre os livros é {max_paginas}.")
